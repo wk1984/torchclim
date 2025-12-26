@@ -1,6 +1,7 @@
 # 使用 Ubuntu 作为基镜像
 # FROM ubuntu:20.04
-FROM intel/oneapi-hpckit:2021.4-devel-ubuntu18.04
+# FROM intel/oneapi-hpckit:2021.4-devel-ubuntu18.04
+FROM intel/oneapi-hpckit:2025.3.0-0-devel-ubuntu24.04
 
 # 设置环境变量，避免交互式安装时的提示
 ENV DEBIAN_FRONTEND=noninteractive
