@@ -1,6 +1,6 @@
 #!/bin/bash
 
-module load intel-compiler/2021.5.0
+# module load intel-compiler/2021.5.0
 
 export SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 export PATH_TO_LIBTORCH=$SCRIPT_DIR/libtorch
