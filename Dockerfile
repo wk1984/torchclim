@@ -11,8 +11,6 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # RUN which ifort
 
-RUN ls
-
 # 1. 安装基础编译工具和依赖项
 RUN apt-get update && apt-get install -y \
     build-essential \
@@ -32,7 +30,7 @@ ENV LD_LIBRARY_PATH=$PATH_TO_LIBTORCH/lib:$LD_LIBRARY_PATH
 
 # 3. 克隆代码库
 #RUN pwd
-#RUN git clone https://github.com/wk1984/torchclim.git
+RUN git clone https://github.com/wk1984/torchclim.git
 
 RUN cd torchclim/torch-wrapper \
     && ./env/install-deps.sh \
